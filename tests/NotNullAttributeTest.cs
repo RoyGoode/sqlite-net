@@ -75,8 +75,7 @@ namespace SQLite.Tests
 							 select actual.Name;
 
 				Assert.AreNotEqual (0, cols.Count (), "Failed to get table info");
-				Assert.IsTrue (joined.Count () == 0, string.Format ("not null constraint was not created for the following properties: {0}"
-					, string.Join (", ", joined.ToArray ())));
+				Assert.IsTrue (joined.Count () == 0, $"not null constraint was not created for the following properties: {string.Join (", ", joined.ToArray ())}");
 			}
 		}
 
@@ -93,8 +92,7 @@ namespace SQLite.Tests
 							 select actual.Name;
 
 				Assert.AreNotEqual (0, cols.Count (), "Failed to get table info");
-				Assert.IsTrue (joined.Count () == 0, string.Format ("not null constraint was not created for the following properties: {0}"
-					, string.Join (", ", joined.ToArray ())));
+				Assert.IsTrue (joined.Count () == 0, $"not null constraint was not created for the following properties: {string.Join (", ", joined.ToArray ())}");
 			}
 		}
 

@@ -27,7 +27,7 @@ namespace SQLite.Tests
 
 			public override string ToString()
 			{
-				return string.Format("[TestObj: Id={0}]", Id);
+				return $"[TestObj: Id={Id}]";
 			}
 		}
 

@@ -278,7 +278,7 @@ namespace SQLite.Tests
 
 			public override string ToString ()
 			{
-				return string.Format ("[NullableEnumClass: ID={0}, NullableIntEnum={1}, NullableTextEnum={2}]", ID, NullableIntEnum, NullableTextEnum);
+				return $"[NullableEnumClass: ID={ID}, NullableIntEnum={NullableIntEnum}, NullableTextEnum={NullableTextEnum}]";
 			}
 		}
 

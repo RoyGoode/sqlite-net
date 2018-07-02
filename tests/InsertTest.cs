@@ -33,7 +33,7 @@ namespace SQLite.Tests
 
             public override string ToString ()
             {
-            	return string.Format("[TestObj: Id={0}, Text={1}]", Id, Text);
+            	return $"[TestObj: Id={Id}, Text={Text}]";
             }
 
         }
@@ -46,7 +46,7 @@ namespace SQLite.Tests
 
             public override string ToString()
             {
-                return string.Format("[TestObj: Id={0}, Text={1}]", Id, Text);
+                return $"[TestObj: Id={Id}, Text={Text}]";
             }
 
         }

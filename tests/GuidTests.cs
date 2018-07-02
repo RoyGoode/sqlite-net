@@ -23,7 +23,7 @@ namespace SQLite.Tests {
             public String Text { get; set; }
 
             public override string ToString() {
-                return string.Format("[TestObj: Id={0}, Text={1}]", Id, Text);
+                return $"[TestObj: Id={Id}, Text={Text}]";
             }
 
         }

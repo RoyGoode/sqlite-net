@@ -31,7 +31,7 @@ namespace SQLite.Tests
 
             public override string ToString()
             {
-                return string.Format("VO:: ID:{0} Flag:{1} Text:{2}", ID, Flag, Text);
+                return $"VO:: ID:{ID} Flag:{Flag} Text:{Text}";
             }
         }
         public class DbAcs : SQLiteConnection
@@ -60,7 +60,7 @@ namespace SQLite.Tests
             var db = new DbAcs(tmpFile);         
             db.buildTable();
             for (int i = 0; i < 10; i++)
-                db.Insert(new VO() { Flag = (i % 3 == 0), Text = String.Format("VO{0}", i) });                
+                db.Insert(new VO() { Flag = (i % 3 == 0), Text = $"VO{i}"});                
             
             // count vo which flag is true            
             Assert.AreEqual(4, db.CountWithFlag(true));
